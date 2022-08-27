@@ -5,14 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinhyunk <jinhyunk@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/26 02:25:18 by jinhyunk          #+#    #+#             */
-/*   Updated: 2022/08/26 02:30:44 by jinhyunk         ###   ########.fr       */
+/*   Created: 2022/08/27 21:34:56 by jinhyunk          #+#    #+#             */
+/*   Updated: 2022/08/27 21:53:20 by jinhyunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
 
-void	ft_print_reverese_alphabet(void)
+void	ft_char(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_print_reverse_alphabet(void)
 {
 	char c;
 
@@ -22,9 +26,4 @@ void	ft_print_reverese_alphabet(void)
 		ft_char(c);
 		c--;
 	}
-}
-
-void	ft_char(char c)
-{
-	write(1, &c, 1);
 }

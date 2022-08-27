@@ -6,16 +6,11 @@
 /*   By: jinhyunk <jinhyunk@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 04:57:09 by jinhyunk          #+#    #+#             */
-/*   Updated: 2022/08/26 09:07:59 by jinhyunk         ###   ########.fr       */
+/*   Updated: 2022/08/27 21:57:59 by jinhyunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-void	ft_char(char c)
-{
-	write(1, &c, 1);
-}
 
 void	ft_print_combn(int n)
 {
@@ -42,7 +37,7 @@ void	ft_print_combn(int n)
 			finish[pos] = 0;
 			pos++;
 		}
-		if (finish[pos] = 1)
+		if (finish[pos] == 1)
 		{
 			arr[pos - 1]++;
 			while (pos < n - 1)
@@ -61,8 +56,7 @@ void	ft_print_combn(int n)
 		}
 		if (finish[0] == 0)
 		{
-			ft_char(", ");
-		}
+			write(1, &", ",1);		}
 	}
 }
 

@@ -6,7 +6,7 @@
 /*   By: jinhyunk <jinhyunk@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 02:31:42 by jinhyunk          #+#    #+#             */
-/*   Updated: 2022/08/26 02:34:39 by jinhyunk         ###   ########.fr       */
+/*   Updated: 2022/08/27 21:51:08 by jinhyunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,4 @@ void	ft_print_numbers(void)
 		ft_char(a);
 		a++;
 	}
-}
-
-void	ft_char(char c)
-{
-	write(1, &c, 1);
 }

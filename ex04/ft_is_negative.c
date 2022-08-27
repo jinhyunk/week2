@@ -6,7 +6,7 @@
 /*   By: jinhyunk <jinhyunk@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 02:35:16 by jinhyunk          #+#    #+#             */
-/*   Updated: 2022/08/26 02:36:43 by jinhyunk         ###   ########.fr       */
+/*   Updated: 2022/08/27 21:52:15 by jinhyunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ void	ft_is_negative(int n)
 {
 	if (n < 0)
 	{
-		write(1, &'N', 1);
+		write(1, &"N", 1);
 	}
 	else
 	{
-		write(1, &'P', 1);
+		write(1, &"P", 1);
 	}
 }

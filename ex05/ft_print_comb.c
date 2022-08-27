@@ -6,16 +6,11 @@
 /*   By: jinhyunk <jinhyunk@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 02:37:12 by jinhyunk          #+#    #+#             */
-/*   Updated: 2022/08/26 02:49:26 by jinhyunk         ###   ########.fr       */
+/*   Updated: 2022/08/27 21:55:09 by jinhyunk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-void	ft_char(char c)
-{
-	write(1, &c, 1);
-}
 
 void ft_print_comb(void)
 {
@@ -39,7 +34,7 @@ void ft_print_comb(void)
 				{
 					break;
 				}
-				ft_char(", ");
+				write(1, &", ", 1);
 				c++;
 			}
 			b++;
